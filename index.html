@@ -10,10 +10,10 @@
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- SWIPER CSS -->
-     <link rel="stylesheet" href="">
-
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- CSS -->
      <link rel="stylesheet" href="assets/css/style.css">
+     <title>Wan Zhu Personal Protal</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -21,7 +21,7 @@
     <header class="header" id="header">
         <!-- nav.nav.container -->
         <nav class="nav container">
-            <a href="" class="nav__logo">Wan Zhu</a>
+            <a href="#" class="nav__logo">Wan Zhu</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -41,17 +41,17 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        <a href="#experiences" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Experiences
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portforlio" class="nav__link">
+                        <a href="#portfolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contactme" class="nav__link">
+                        <a href="#contact" class="nav__link">
                             <i class="uil uil-envelope-check nav__icon"></i> Contact me
                         </a>
                     </li>
@@ -60,6 +60,7 @@
             </div>
 
             <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -77,7 +78,7 @@
                     <a href="https://www.linkedin.com/in/wanzhu" target="_blank" class="home__social-icon" >
                         <i class="uil uil-linkedin"></i>
                     </a>
-                    <a href="" class="home__social-icon" target="_blank" class="home__social-icon" >
+                    <a href="https://wanzhu988.github.io/wz_personal_portal/" class="home__social-icon" target="_blank" class="home__social-icon" >
                         <i class="uil uil-dribbble"></i>
                     </a>
                     <a href="https://github.com/wanzhu988" target="_blank" class="home__social-icon" >
@@ -104,10 +105,10 @@
                 </div>
 
                 <div class="home__data">
-                    <h1 class="home__title">Hi, I'm Wan Zhu</h1>
-                    <h3 class="home__title">Frontend developer</h3>
+                    <h1 class="home__title">Hi, I'm Wan(One)</h1>
+                    <h3 class="home__subtitle">A frontend developer who learns by doing</h3>
                     <p class="home__description">
-                        ahdjlkwhflkewh
+                        with passion in: JavaScript | TypeScript | React | Vue | UI/UX Design | Node.js
                     </p>
                     <a href="#contact" class="button button--flex">
                         Contact Me<i class="uil uil-message button__icon"></i>
@@ -133,7 +134,7 @@
             <img src="assets/img/AboutMe.jpg" alt="" class="about__img">
 
             <div class="about__data">
-                <p class="about__description">ajnfkljwehbflkbgqlkrg</p>
+                <p class="about__description">I'm pursuing a master's degree in Informatics at TUM. In May 2024, I discovered my passion for Web Development and am now striving to become an excellent frontend developer after completing my studies.</p>
 
                 <div class="about__info">
                     <div>
@@ -269,20 +270,20 @@
         </div>
      </section>                                                                                                                                                                                                                                                                                                                                                         
     <!-- QUALIFICATION -->
-     <section class="qualification section">
-        <h2 class="section__title" i18n="qualification__title">Qualification</h2>
+     <section class="qualification section" id="experiences">
+        <h2 class="section__title" i18n="qualification__title">Experiences</h2>
         <span class="section__subtitle" i18n="qualification__subtitle">My personal journey</span>
 
         <div class="qualification__container container">
             <div class="qualification__tabs">
                 <div class="qualification__button button--flex qualification__active" data-target="#education">
                     <i class="uil uil-graduation-cap qualification__icon"></i>
-                    <span i18n="education">Education</span>
+                    <span i18n="education">Study</span>
                 </div>
 
                 <div class="qualification__button button--flex" data-target="#work">
                     <i class="uil uil-briefcase-alt qualification__icon"></i>
-                    <span i18n="work">Experiences</span>
+                    <span i18n="work">Work</span>
                 </div>
             </div>
 
@@ -436,31 +437,189 @@
      </section>
 
     <!-- SERVICES -->
+    <!-- PORTFOLIO -->
      <section class="portfolio section" id="portfolio">
         <h2 class="section__title" i18n="portfolio__title">Portfolio</h2>
         <span class="section__subtitle" i18n="portfolio__subtitle">Most recent works</span>
 
         <div class="portfolio__container container swiper-container">
             <div class="swiper-wrapper">
-                
+                <!-- portfolio1 -->
+                 <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Morden Website(React/Typescript)</h3>
+
+                        <p class="portfolio__description">
+                            Implemented UI according to the provided design mockup, extract user data from external API, and developed Filter by Name/City/Highlight, implemented a 1-second debounce Hook.
+                        </p>
+
+                        <a href="https://github.com/wanzhu988/dps-react-challenge" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                 </div>
+
+                <!-- portfolio2 -->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Morden Web Application(React/Typescript + Python/FastApi)</h3>
+
+                        <p class="portfolio__description">
+                            Implemented UI according to the provided design mockup, extract user data from external API, and developed Filter by Name/City/Highlight, implemented a 1-second debounce Hook.
+                        </p>
+
+                        <a href="https://github.com/wanzhu988/dps-react-challenge" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- portfolio3 -->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Morden Web Application(Vue/Typescript + Python/FastApi)</h3>
+
+                        <p class="portfolio__description">
+                            Implemented UI according to the provided design mockup, extract user data from external API, and developed Filter by Name/City/Highlight, implemented a 1-second debounce Hook.
+                        </p>
+
+                        <a href="https://github.com/wanzhu988/dps-react-challenge" target="_blank" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
             </div>
         </div>
      </section>
-    <!-- PORTFOLIO -->
-    </main>
+    <!-- CONTACT ME -->
+     <div class="contact section" id="contact">
+        <h2 class="section__title">Contact me</h2>
+        <span class="section__subtitle">Get in touch</span>
 
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="uil uil-phone-alt contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title" i18n="tel">Call me</h3>
+                        <span class="contact__subtitle" i18n="tel__number"
+                          >+49 15229904205</span
+                        >
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+      
+                    <div>
+                      <h3 class="contact__title" i18n="email">E-mail</h3>
+                      <span class="contatc__subtitle" i18n="email__address"
+                        >wan.zhu@tum.de</span
+                      >
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+      
+                    <div>
+                      <h3 class="contact__title" i18n="location">Location</h3>
+                      <span class="contatc__subtitle" i18n="location__detail"
+                        >Munich, Germany</span
+                      >
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </main>
     <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Wan Zhu</h1>
+                    <span class="footer__subtitle">
+                        Frontend developer
+                    </span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>                    
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>                           
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/wanzhu" target="_blank" class="footer__social-icon" >
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://wanzhu988.github.io/wz_personal_portal/" target="_blank" class="footer__social-icon" >
+                        <i class="uil uil-dribbble"></i>
+                    </a>
+                    <a href="https://github.com/wanzhu988" target="_blank" class="footer__social-icon" >
+                        <i class="uil uil-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                &#169; WanZhu.Copy from
+                <a
+                  class="footer__copy"
+                  href="https://www.youtube.com/c/Bedimcode"
+                  target="_blank"
+                  >Bedimcode</a
+                >
+            </p>
+        </div>
+    </footer>
 
     <!-- SCROLL TOP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!-- SWIPER JS -->
-     <script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-     </script>
 
     <!-- MAIN JS -->
      <script src="assets/js/main.js">
-
      </script>
+
+    <!-- iconfont JS -->
+    <!-- <script src="assets/js/iconfont.js"></script> -->
+    <!-- jquery -->
+    <!-- <script src="assets/js/jquery2.1.4.min.js"></script> -->
+    <!-- <script src="assets/js/jquery.i18n.min.js"></script> -->
+
+     <!-- TRANSLATE JS -->
 </body>
 </html>
