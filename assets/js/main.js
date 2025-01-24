@@ -66,17 +66,15 @@ tabs.forEach(tab => {
 
 // PORTFOLIO SWIPER
 let swiperPortfolio = new Swiper('.portfolio__container', {
-  cssMode: true,
-  loop: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  cssMode: true, // 启用 CSS 模式，使滑块过渡更加流畅
+  loop: true,    // 开启循环滑动
+  navigation: {  // 启用导航按钮
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
   },
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  pagination: {  // 启用分页指示器
+      el: '.swiper-pagination',
+      clickable: true, // 允许用户点击指示器跳转
   },
 });
 
